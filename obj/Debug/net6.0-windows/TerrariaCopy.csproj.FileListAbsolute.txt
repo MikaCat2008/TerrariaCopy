@@ -73,3 +73,4 @@ C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.pdb
 C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.genruntimeconfig.cache
 C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\ref\TerrariaCopy.dll
 C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\Content\stone.xnb
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.sourcelink.json

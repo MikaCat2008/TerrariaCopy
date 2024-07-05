@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using TerrariaCopy.Engine;
+using Engine;
 
 
 namespace TerrariaCopy
@@ -21,7 +22,7 @@ namespace TerrariaCopy
             this.graphics = new GraphicsDeviceManager(this);
             this.IsMouseVisible = true;
             this.entityManager = new EntityManager();
-            Content.RootDirectory = "Content";
+            this.Content.RootDirectory = "Content";
         }
 
         protected override void Initialize()
@@ -31,31 +32,35 @@ namespace TerrariaCopy
             Tools.currentManager = this.entityManager;
             Sprite.graphicsDevice = this.GraphicsDevice;
             BaseComponent.app = this;
+            
+            Dictionary<string, TileType> tileMapTypes = new Dictionary<string, TileType>();
+            tileMapTypes.Add(
+                "Stone", new TileType(
+                    new Sprite2DRenderScript(Textures.Stone)
+                )
+            );
 
-            Texture2D texture = Content.Load<Texture2D>("stone");
             Prefab myPrefab = new Prefab(
-                "MyEntity", 
+                "TileMap", 
                 new List<BaseComponent>() 
                 {
-                    new Sprite() 
-                    { 
-                        renderScript=new Sprite2DRenderScript(texture) 
-                    },
-                    new Movement()
+                    new TileMap()
+                    {
+                        new TileMapTypes(tileMapTypes)
+                    }
                 }
             );
 
-            for (int i = 0; i < 25000; i++)
-            {
-                Tools.Instantiate(myPrefab, new Vector2(i / 25, i % 400));                
-            }
-        
+            Tools.Instantiate(myPrefab, new Vector2(200, 200));
+            
             this.entityManager.InitializeEntities();
         }
 
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(this.GraphicsDevice);
+
+            Textures.Initialize(this.Content);
         }
 
         protected override void Update(GameTime gameTime)
