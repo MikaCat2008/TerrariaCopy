@@ -1,0 +1,75 @@
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.exe
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.deps.json
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.runtimeconfig.json
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.pdb
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.csproj.AssemblyReference.cache
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.AssemblyInfoInputs.cache
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.AssemblyInfo.cs
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.csproj.CoreCompileInputs.cache
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\Terraria.2A436ED4.Up2Date
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\refint\TerrariaCopy.dll
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.pdb
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.genruntimeconfig.cache
+C:\Users\dimal\source\repos\TerrariaCopy\TerrariaCopy\obj\Debug\net6.0-windows\ref\TerrariaCopy.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.exe
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.deps.json
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.runtimeconfig.json
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\TerrariaCopy.pdb
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.csproj.AssemblyReference.cache
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.AssemblyInfoInputs.cache
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.AssemblyInfo.cs
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.csproj.CoreCompileInputs.cache
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\Terraria.2A436ED4.Up2Date
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.dll
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\refint\TerrariaCopy.dll
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.pdb
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\TerrariaCopy.genruntimeconfig.cache
+C:\Nmk1ss dev\TerrariaCopy\obj\Debug\net6.0-windows\ref\TerrariaCopy.dll
+C:\Nmk1ss dev\TerrariaCopy\bin\Debug\net6.0-windows\Content\stone.xnb
