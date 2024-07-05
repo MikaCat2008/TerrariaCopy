@@ -1,11 +1,19 @@
+using System;
 using Microsoft.Xna.Framework.Graphics;
 
 
 namespace TerrariaCopy.Engine
 {
-    public interface IRenderScript
+    public abstract class IRenderScript
     {
-        public Texture2D Render();
+        public Sprite sprite;
+
+        public virtual void Initialize(Sprite sprite) 
+        {
+            this.sprite = sprite;
+        }
+
+        public abstract Texture2D Render();
     }
 
     public class Sprite2DRenderScript : IRenderScript
@@ -17,7 +25,7 @@ namespace TerrariaCopy.Engine
             this.texture = texture;
         }
 
-        public Texture2D Render() 
+        public override Texture2D Render() 
         {
             return this.texture;
         }
@@ -26,19 +34,19 @@ namespace TerrariaCopy.Engine
     public class Sprite : BaseComponent
     {
         public Texture2D rendered;
-        public IRenderScript? renderScript;
+        public IRenderScript renderScript;
 
         public static GraphicsDevice graphicsDevice;
 
+        public override void Initialize(Entity entity)
+        {
+            base.Initialize(entity);
+
+            this.renderScript.Initialize(this);
+        }
+
         public void Render()
         {
-            if (this.renderScript == null) 
-            {
-                this.renderScript = new Sprite2DRenderScript(
-                    new Texture2D(Sprite.graphicsDevice, 100, 100)
-                );
-            }
-
             this.rendered = this.renderScript.Render();
         }
     }

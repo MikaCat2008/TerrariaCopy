@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 using TerrariaCopy.Engine;
-using Engine;
 
 
 namespace TerrariaCopy
@@ -12,6 +11,7 @@ namespace TerrariaCopy
     public class App : Game
     {
         public int frames;
+        public Vector2 cameraPosition;
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         private EntityManager entityManager;
@@ -19,6 +19,7 @@ namespace TerrariaCopy
         public App()
         {
             this.frames = 0;
+            this.cameraPosition = new Vector2(100, 100);
             this.graphics = new GraphicsDeviceManager(this);
             this.IsMouseVisible = true;
             this.entityManager = new EntityManager();
@@ -33,27 +34,34 @@ namespace TerrariaCopy
             Sprite.graphicsDevice = this.GraphicsDevice;
             BaseComponent.app = this;
             
-            Dictionary<string, TileType> tileMapTypes = new Dictionary<string, TileType>();
-            tileMapTypes.Add(
-                "Stone", new TileType(
-                    new Sprite2DRenderScript(Textures.Stone)
-                )
-            );
+            Dictionary<string, TileType> tileMapTypes = new Dictionary<string, TileType>()
+            {
+                {
+                    "Stone",
+                    new TileType(
+                        "Stone",
+                        new Sprite2DRenderScript(Textures.Stone)
+                    )
+                }
+            };
 
-            Prefab myPrefab = new Prefab(
+            Prefab tileMapPrefab = new Prefab(
                 "TileMap", 
                 new List<BaseComponent>() 
                 {
-                    new TileMap()
-                    {
-                        new TileMapTypes(tileMapTypes)
-                    }
+                    new Sprite() { renderScript=new TileMapRenderScript(32) },
+                    new TileMap() { types=tileMapTypes },
+                    new Transition() { position=new Vector2(0, 0) }
                 }
             );
 
-            Tools.Instantiate(myPrefab, new Vector2(200, 200));
-            
+            Entity tileMapEntity = Tools.Instantiate(tileMapPrefab, new Vector2(0, 0));
+            TileMap tileMap = tileMapEntity.GetComponent<TileMap>();
+
             this.entityManager.InitializeEntities();
+
+            tileMap.Add("Stone", new Vector2(0, 0));
+            tileMap.Add("Stone", new Vector2(1, 1));
         }
 
         protected override void LoadContent()
@@ -83,13 +91,20 @@ namespace TerrariaCopy
 
             foreach (Entity entity in this.entityManager.GetEntities())
             {
-                Sprite? sprite = entity.GetComponent<Sprite>();
-                Transition? transition = entity.GetComponent<Transition>();
+                Sprite sprite = entity.GetComponent<Sprite>();
+                Transition transition = entity.GetComponent<Transition>();
             
                 if (sprite != null && transition != null) 
                 {
                     sprite.Render();
-                    this.spriteBatch.Draw(sprite.rendered, transition.position, Color.White);
+
+                    Vector2 position = transition.position + this.cameraPosition;
+
+                    this.spriteBatch.Draw(
+                        sprite.rendered,
+                        position, 
+                        Color.White
+                    );
                 }
             }
 
