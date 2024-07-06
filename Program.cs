@@ -1,3 +1,3 @@
 ﻿
-using var game = new TerrariaCopy.App();
+using var game = new Engine.App();
 game.Run();

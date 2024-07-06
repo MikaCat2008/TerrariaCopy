@@ -126,8 +126,6 @@ namespace Engine
 
                     tileTexture.GetData(data);
 
-                    Console.WriteLine($"{this.tileMap.GetHeight()}, {y}");
-
                     texture.SetData(
                         0, 
                         new Rectangle(

@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
 
 
-namespace TerrariaCopy
+namespace Engine
 {
     public class App : Game
     {
@@ -52,7 +52,8 @@ namespace TerrariaCopy
                 "Player",
                 new List<BaseComponent>()
                 {
-                    new Sprite() { renderScript=new RectangleRenderScript(32, 64, Color.Red) }
+                    new Sprite() { renderScript=new RectangleRenderScript(32, 64, Color.Red) },
+                    new Movement()
                 }
             );
             Prefab tileMapPrefab = new Prefab(
