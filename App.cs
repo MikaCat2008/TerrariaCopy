@@ -53,27 +53,45 @@ namespace Engine
                 new List<BaseComponent>()
                 {
                     new Sprite() { renderScript=new RectangleRenderScript(32, 64, Color.Red) },
-                    new Movement()
+                    new Movement(),
+                    new BoxCollider() 
+                    { 
+                        collision=true, 
+                        collisionScript=new RactangleCollisionScript(32, 64) 
+                    }
                 }
             );
-            Prefab tileMapPrefab = new Prefab(
-                "TileMap", 
-                new List<BaseComponent>() 
+            Prefab wallPrefab = new Prefab(
+                "Wall",
+                new List<BaseComponent>()
                 {
-                    new Sprite() { renderScript=new TileMapRenderScript(32) },
-                    new TileMap() { types=tileMapTypes },
-                    new Transition() { position=new Vector2(0, 0) }
+                    new Sprite() { renderScript=new RectangleRenderScript(32, 32, Color.Gray) },
+                    new BoxCollider() 
+                    { 
+                        collision=true, 
+                        collisionScript=new RactangleCollisionScript(32, 32) 
+                    }
                 }
             );
+            // Prefab tileMapPrefab = new Prefab(
+            //     "TileMap", 
+            //     new List<BaseComponent>() 
+            //     {
+            //         new Sprite() { renderScript=new TileMapRenderScript(32) },
+            //         new TileMap() { types=tileMapTypes },
+            //         new Transition() { position=new Vector2(0, 0) }
+            //     }
+            // );
 
+            Tools.Instantiate(wallPrefab, new Vector2(0, -200));
             Tools.Instantiate(playerPrefab, new Vector2(0, 64));
-            Entity tileMapEntity = Tools.Instantiate(tileMapPrefab, new Vector2(0, 0));
+            // Entity tileMapEntity = Tools.Instantiate(tileMapPrefab, new Vector2(0, 0));
 
             this.entityManager.InitializeEntities();
 
-            TileMap tileMap = tileMapEntity.GetComponent<TileMap>();
-            tileMap.Add("Stone", new Vector2(0, 0));
-            tileMap.Add("Stone", new Vector2(0, 1));
+            // TileMap tileMap = tileMapEntity.GetComponent<TileMap>();
+            // tileMap.Add("Stone", new Vector2(0, 0));
+            // tileMap.Add("Stone", new Vector2(0, 1));
         }
 
         protected override void LoadContent()
