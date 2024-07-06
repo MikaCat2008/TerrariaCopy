@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using System;
 
 
-namespace TerrariaCopy.Engine
+namespace Engine
 {
     public class EntityManager
     {

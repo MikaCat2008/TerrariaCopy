@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
 
-namespace TerrariaCopy.Engine
+namespace Engine
 {
     public class Entity
     {

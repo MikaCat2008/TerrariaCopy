@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TerrariaCopy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05d71485a7a29217bf9de276a55cde70f760b762")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63fd6b4bd9b4bded8463f12b5a43e6cb99041ffa")]
 [assembly: System.Reflection.AssemblyProductAttribute("TerrariaCopy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TerrariaCopy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

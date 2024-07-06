@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 
 
-namespace TerrariaCopy.Engine
+namespace Engine
 {
     public class Transition : BaseComponent
     {

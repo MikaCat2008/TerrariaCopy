@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace TerrariaCopy.Engine
+namespace Engine
 {
     public class Prefab
     {

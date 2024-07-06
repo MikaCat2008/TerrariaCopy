@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 
-namespace TerrariaCopy.Engine
+namespace Engine
 {
     public class Tile
     {
@@ -30,10 +30,10 @@ namespace TerrariaCopy.Engine
 
     public class TileMap : BaseComponent
     {
-        public int? minX;
-        public int? maxX;
-        public int? minY;
-        public int? maxY;
+        public int minX;
+        public int maxX;
+        public int minY;
+        public int maxY;
 
         public Dictionary<Tuple<int, int>, Tile> tiles;
         public Dictionary<string, TileType> types;
@@ -55,27 +55,10 @@ namespace TerrariaCopy.Engine
             Tile tile = new Tile(tileType);
             Tuple<int, int> positionTuple = new Tuple<int, int>((int)position.X, (int)position.Y);
 
-            if (this.minX == null)
-            {
-                this.minX = positionTuple.Item1;
-                this.maxX = positionTuple.Item1;
-            }
-            else
-            {
-                this.minX = Math.Min((int)minX, positionTuple.Item1);
-                this.maxX = Math.Max((int)maxX, positionTuple.Item1);
-            }
-
-            if (this.minY == null)
-            {
-                this.minY = positionTuple.Item2;
-                this.maxY = positionTuple.Item2;
-            }
-            else
-            {
-                this.minY = Math.Min((int)minY, positionTuple.Item2);
-                this.maxY = Math.Max((int)maxY, positionTuple.Item2);
-            }
+            this.minX = Math.Min(minX, positionTuple.Item1);
+            this.maxX = Math.Max(maxX, positionTuple.Item1);
+            this.minY = Math.Min(minY, positionTuple.Item2);
+            this.maxY = Math.Max(maxY, positionTuple.Item2);
 
             this.tiles.Add(positionTuple, tile);
         }
@@ -93,28 +76,12 @@ namespace TerrariaCopy.Engine
 
         public int GetWidth()
         {
-            if (this.maxX == null) 
-            {
-                return 0;
-            }
-
-            int minX = (int)this.minX;
-            int maxX = (int)this.maxX;
-
-            return maxX - minX + 1;
+            return this.maxX - this.minX + 1;
         }
     
         public int GetHeight()
         {
-            if (this.maxY == null) 
-            {
-                return 0;
-            }
-
-            int minY = (int)this.minY;
-            int maxY = (int)this.maxY;
-
-            return maxY - minY + 1;
+            return this.maxY - this.minY + 1;
         }
     }
 
@@ -139,8 +106,13 @@ namespace TerrariaCopy.Engine
 
             public override Texture2D Render() 
             {
+                if (this.tileMap.tiles.Count == 0)
+                {
+                    throw new Exception("Can not render tile map with 0 tiles");
+                }
+
                 Texture2D texture = new Texture2D(
-                    BaseComponent.app.GraphicsDevice, 
+                    BaseComponent.app.GraphicsDevice,
                     this.tileMap.GetWidth() * this.tileSize, 
                     this.tileMap.GetHeight() * this.tileSize
                 );
@@ -154,11 +126,13 @@ namespace TerrariaCopy.Engine
 
                     tileTexture.GetData(data);
 
+                    Console.WriteLine($"{this.tileMap.GetHeight()}, {y}");
+
                     texture.SetData(
                         0, 
                         new Rectangle(
                             x * this.tileSize, 
-                            y * this.tileSize, 
+                            (this.tileMap.GetHeight() - y - 1) * this.tileSize, 
                             this.tileSize, 
                             this.tileSize
                         ),
